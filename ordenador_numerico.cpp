@@ -6,8 +6,8 @@ using namespace std;
 double ordenador(int lista[],int tamanho){
     int aux;
 
-    for(int j=0;j<tamanho*2;j++){
-        for(int i=0;i<tamanho-1;i++){
+    for(int j=0;j<tamanho-1;j++){
+        for(int i=0;i<tamanho-j-1;i++){
             if(lista[i]>lista[i+1]){
                 aux = lista[i];
                 lista[i]=lista[i+1];
